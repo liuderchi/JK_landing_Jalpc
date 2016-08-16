@@ -5,8 +5,8 @@ title: "Jalpc"
 description: "Jack's blog,use Jekyll and github pages."
 keywords: "Jack,Jalpc,blog,Jekyll,github,gh-pages"
 
-baseurl: "/"
-url: "http://www.jack003.com"
+baseurl: "/jalpc_jekyll_theme/"
+# url: "http://www.jack003.com"
 # url: "http://127.0.0.1:4000"
 
 # blog img path
@@ -103,3 +103,6 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+# temporarily exclude blog files
+exclude: ['blog/blog.html', 'blog/database.html', 'blog/html.html', 'blog/life.html', 'blog/linux.html', 'blog/mac.html', 'blog/python.html', '_posts']
