@@ -22,14 +22,12 @@ permalink: /
                         <li><a class="page-scroll" href="#career"><span data-i18n="nav.career">{{ site.landing.career }}</span></a></li>
                         <li><a class="page-scroll" href="#skills"><span data-i18n="nav.skills">{{ site.landing.skills }}</span></a></li>
                         <li><a class="page-scroll" href="#project"><span data-i18n="nav.projects">{{ site.landing.projects }}</span></a></li>
-                        <li><a class="page-scroll" href="#blog"><span data-i18n="nav.blog">{{ site.landing.blog }}</span></a></li>
+                        <!-- <li><a class="page-scroll" href="#blog"><span data-i18n="nav.blog">{{ site.landing.blog }}</span></a></li> -->
                         <li><a class="page-scroll" href="#link"><span data-i18n="nav.link">{{ site.landing.link }}</span></a></li>
-                        <li>
-                            <a class="btn btn-sm set_en"><img src="{{"static/img/flags/United-States.png"| prepend: site.baseurl }}" height="16px" width="16px"></a>
-                        </li>
-                        <li>
-                            <a class="btn btn-sm set_cn"><img src="{{"static/img/flags/China.png"| prepend: site.baseurl }}" height="16px" width="16px"></a>
-                        </li>
+
+                        <!-- i18n -->
+                        <!-- <li><a class="btn btn-sm set_en"><img src="{{"static/img/flags/United-States.png"| prepend: site.baseurl }}" height="16px" width="16px"></a></li> -->
+                        <!-- <li><a class="btn btn-sm set_cn"><img src="{{"static/img/flags/China.png"| prepend: site.baseurl }}" height="16px" width="16px"></a></li> -->
 
                     </ul>
                 </div>
@@ -105,13 +103,10 @@ permalink: /
                     <img src="{{ site.author.head_img | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
                     <h4><span class="navy">{{ site.author.last_name }}</span> {{ site.author.first_name }}</h4>
                     <ul class="list-inline social-icon">
-                        <li><a href="https://github.com/{{ site.author.github_username }}" target="blank"><i class="fa fa-github"></i></a>
-                        </li>
-                        <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i></a>
-                        </li>
-                        <li><a href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="{{ site.url}}/feed.xml" target="blank"><i class="fa fa-rss"></i></a>
+                        <li><a href="https://github.com/{{ site.author.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
+                        <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i></a></li>
+                        <!-- <li><a href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li> -->
+                        <!-- <li><a href="{{ site.url}}/feed.xml" target="blank"><i class="fa fa-rss"></i></a> -->
                         </li>
                     </ul>
                 </div>
@@ -426,14 +421,13 @@ permalink: /
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
                 <div class="team-member wow zoomIn">
-                    <h4><span class="navy">{{ site.jingyu.last_name }}</span> {{ site.jingyu.first_name }}</h4>
+                    <h4><span class="navy">{{ site.author.last_name }}</span> {{ site.author.first_name }}</h4>
                     <p>
-                        {{ site.jingyu.description }}
+                        {{ site.author.description }}
                     </p>
                     <ul class="list-inline social-icon">
-                        <li><a href="{{ site.jingyu.link }}" target="blank"><i class="fa fa-link"></i></a>
-                        </li>
-                        <li><a href="mailto:{{ site.jingyu.email }}"><i class="fa fa-envelope-o"></i></a>
+                        <!-- <li><a href="{{ site.author.link }}" target="blank"><i class="fa fa-link"></i></a></li> -->
+                        <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -441,7 +435,7 @@ permalink: /
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p id="jalpc_site_pv"><strong>&copy; 2015 {{ site.title }}</strong></p>
+                <p id="jalpc_site_pv"><strong>&copy; 2016 {{ site.title }}</strong></p>
                 <!-- <img src="http://www.reliablecounter.com/count.php?page=www.jack003.com3&digit=style/black-and-white/3/&reloads=0" alt="" title="" border="0">&nbsp;<span data-i18n="link.view">views</span> || -->
                 <!-- <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
                 <!-- <span id="busuanzi_container_site_pv"><strong id="busuanzi_value_site_pv"></strong>&nbsp;views.&nbsp;</span>|| -->
@@ -499,55 +493,4 @@ permalink: /
     })();
     // Activate WOW.js plugin for animation on scrol
     new WOW().init();
-</script>
-
-<script>
-    $(document).ready(function (){
-        $.i18n.init({
-            resGetPath: 'static/locales/__lng__.json',
-            load: 'unspecific',
-            fallbackLng: false,
-            lng: 'en'
-        }, function (t){
-            $('.i18container').i18n();
-            // $('#i18_title').i18n();
-            $('#i18_navbar').i18n();
-            $('#i18_about_me').i18n();
-            $('#i18_skills').i18n();
-            $('#i18_projects').i18n();
-            $('#i18_career').i18n();
-            $('#i18_blog').i18n();
-            $('#i18_link').i18n();
-        });
-        $('.set_en').on('click', function (){
-            i18n.setLng('en', function(){
-                $('.i18container').i18n();
-                // $('#i18_title').i18n();
-                $('#i18_navbar').i18n();
-                $('#i18_about_me').i18n();
-                $('#i18_skills').i18n();
-                $('#i18_projects').i18n();
-                $('#i18_career').i18n();
-                $('#i18_blog').i18n();
-                $('#i18_link').i18n();
-                // $('.set_en').addClass('active');
-                // $('.set_cn').removeClass('active');
-            });
-        });
-        $('.set_cn').on('click', function (){
-            i18n.setLng('cn', function(){
-                $('.i18container').i18n();
-                // $('#i18_title').i18n();
-                $('#i18_navbar').i18n();
-                $('#i18_about_me').i18n();
-                $('#i18_skills').i18n();
-                $('#i18_projects').i18n();
-                $('#i18_career').i18n();
-                $('#i18_blog').i18n();
-                $('#i18_link').i18n();
-                // $('.set_cn').addClass('active');
-                // $('.set_en').removeClass('active');
-            });
-        });
-    });
 </script>
