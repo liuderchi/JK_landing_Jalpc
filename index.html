@@ -6,6 +6,7 @@ permalink: /
 <div class="navbar-wrapper">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
+                <!-- NOTE HEADER for Navbar -->
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -76,12 +77,10 @@ permalink: /
         <div class="row m-b-lg">
             <div class="col-lg-12 text-center">
                 <div class="navy-line"></div>
-                <h1><span data-i18n="about_me.about_me">About Me</span></h1>
-                <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p> -->
+                <h1>Hello! I'm <span class="navy">{{ site.data.landing.about.title }}</span></h1>
             </div>
         </div>
         <div class="row">
-            <!-- python -->
             <div class="col-xs-2 wow fadeInLeft">
                 <div class="team-member">
                     <div class="vote-icon">
@@ -89,11 +88,10 @@ permalink: /
                     </div>
                 </div>
             </div>
-            <!-- linux -->
             <div class="col-xs-2 wow fadeInLeft">
                 <div class="team-member">
                     <div class="vote-icon">
-                        <i class="icon-shell"></i>
+                        <i class="icon-javascript"></i>
                     </div>
                 </div>
             </div>
@@ -101,7 +99,7 @@ permalink: /
             <div class="col-xs-4">
                 <div class="team-member wow zoomIn">
                     <img src="{{ site.author.head_img | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
-                    <h4><span class="navy">{{ site.author.last_name }}</span> {{ site.author.first_name }}</h4>
+                    <h4>{{ site.data.landing.about.role }}</h4>
                     <ul class="list-inline social-icon">
                         <li><a href="https://github.com/{{ site.author.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
                         <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i></a></li>
@@ -111,7 +109,6 @@ permalink: /
                     </ul>
                 </div>
             </div>
-            <!-- html -->
             <div class="col-xs-2 wow fadeInRight">
                 <div class="team-member">
                     <div class="vote-icon">
@@ -119,20 +116,17 @@ permalink: /
                     </div>
                 </div>
             </div>
-            <!-- docker -->
             <div class="col-xs-2 wow fadeInRight">
                 <div class="team-member">
                     <div class="vote-icon">
-                        <i class="icon-docker"></i>
+                        <i class="icon-ubuntu"></i>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p><span data-i18n="about_me.des">
-                    I am a Python engineer with website development, automation Ops and writing scripts experience. Life is a continuous learning process, so work makes me more rigorous, travel makes my life more colorful. I can make lots of friends when I coding and travel.
-                </span></p>
+              <p><span>{{site.data.landing.about.intro}}</span></p>
             </div>
         </div>
     </div>
@@ -143,58 +137,29 @@ permalink: /
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="navy-line"></div>
-                <h1><span data-i18n="career.my_career">My Career</span></h1>
+                <h1><span data-i18n="career.my_career">{{site.data.landing.career-title}}</span></h1>
             </div>
         </div>
         <div class="row features-block">
 
             <div class="col-lg-12">
                 <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
-                    <!-- nextcode -->
+                  {% for item in site.data.landing.career %}
                     <div class="vertical-timeline-block">
                         <div class="vertical-timeline-icon navy-bg">
-                            <i class="fa fa-plus-square"></i>
+                            <i class="{{item[1].icon_cls_attr}}"></i>
+                            <!-- NOTE item[0], item[1] is key-value pair -->
                         </div>
                         <div class="vertical-timeline-content">
-                            <h2><span data-i18n="career.nextcode">Nextcode</span></h2>
-                            <p><span data-i18n="career.nextcode_des">Now I am in Nextcode and develop website with Python code for genetic analysis. </span></p>
-                            <span class="vertical-date"><span data-i18n="career.nextcode_date"> Apr. 2016 </span><br/> <small><span data-i18n="career.nextcode_job">Python Developer</span></small> </span>
+                            <h2><span>{{item[1].name}}</span></h2>
+                            <p><span>{{item[1].description}} </span></p>
+                            <!-- TODO create link to support description -->
+                            <span class="vertical-date"><span> {{item[1].from}} </span>
+                            <br/>
+                            <small><span>{{item[1].job_title}}</span></small> </span>
                         </div>
                     </div>
-                    <!-- netease game -->
-                    <div class="vertical-timeline-block">
-                        <div class="vertical-timeline-icon navy-bg">
-                            <i class="fa fa-gamepad"></i>
-                        </div>
-                        <div class="vertical-timeline-content">
-                            <h2><span data-i18n="career.netease">Netease Game</span></h2>
-                            <p><span data-i18n="career.netease_des">In Netease game, I learned game service system and use Python code for ops. </span></p>
-                            <span class="vertical-date"><span data-i18n="career.netease_date"> Jun. 2015 </span><br/> <small><span data-i18n="career.netease_job">Dev Ops</span></small> </span>
-                        </div>
-                    </div>
-                    <!-- uloud -->
-                    <div class="vertical-timeline-block">
-                        <div class="vertical-timeline-icon navy-bg">
-                            <i class="fa fa-cloud"></i>
-                        </div>
-                        <div class="vertical-timeline-content">
-                            <h2><span data-i18n="career.ucloud">Ucloud</span></h2>
-                            <p><span data-i18n="career.ucloud_des">In ucloud, I started to deal with servers and Linux system and use shell scripts to manage massive server.</span></p>
-                            <span class="vertical-date"><span data-i18n="career.ucloud_date"> Sep. 2013 </span><br/> <small><span data-i18n="career.ucloud_job">Dev Ops</span></small> </span>
-                        </div>
-                    </div>
-                    <!-- student -->
-                    <div class="vertical-timeline-block">
-                        <div class="vertical-timeline-icon navy-bg">
-                            <i class="fa fa-book"></i>
-                        </div>
-                        <div class="vertical-timeline-content">
-                            <h2><span data-i18n="career.college">Graduation</span></h2>
-                            <p><span data-i18n="career.college_des">At July 2013,I graduated from college and started my IT technology tour.</span></p>
-                            <span class="vertical-date"><span data-i18n="career.college_date"> Jul. 2013 </span><br/> <small><span data-i18n="career.college_job">Student</span></small> </span>
-                        </div>
-                    </div>
-
+                  {% endfor %}
                 </div>
             </div>
 
@@ -207,74 +172,25 @@ permalink: /
         <div class="row">
             <div class="col-lg-12 text-center" id="i18_skills">
                 <div class="navy-line"></div>
-                <h1><span data-i18n="skills.my_skills">My Skills</span></h1>
+                <h1><span>{{site.data.landing.skills-title}}</span></h1>
             </div>
         </div>
         <div class="row features-block">
-          <div class="row">
-            <div class="col-lg-1 col-lg-offset-2 features-text wow fadeInLeft">
-              <p>Python</p>
-            </div>
-            <div class="col-lg-7 features-text wow fadeInLeft">
-                <div class="progress progress-bar-default">
-                    <div style="width: 85%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" role="progressbar" class="progress-bar">
-                        <!-- <span class="sr-only">85% Complete (success)</span> -->
-                    </div>
+
+          {% for skill in site.data.landing.skills %}
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-2 features-text wow fadeInLeft">
+                  <span><strong>{{skill[1].name}}</strong> ({{skill[1].prof}})</span>
                 </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
-              <p>HTML</p>
-            </div>
-            <div class="col-lg-7 wow fadeInLeft">
+              <div class="col-lg-7 features-text wow fadeInLeft">
                 <div class="progress progress-bar-default">
-                    <div style="width: 65%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="65" role="progressbar" class="progress-bar">
-                        <!-- <span class="sr-only">65% Complete (success)</span> -->
-                    </div>
+                  <div class="progress-bar" style="width: {{skill[1].level}}%" aria-valuenow="{{skill[1].level}}" aria-valuemax="100" aria-valuemin="0" role="progressbar" ></div>
                 </div>
+              </div>
             </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
-              <p>Linux/Shell</p>
-            </div>
-            <div class="col-lg-7 wow fadeInLeft">
-                <div class="progress progress-bar-default">
-                    <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="progress-bar">
-                        <!-- <span class="sr-only">80% Complete (success)</span> -->
-                    </div>
-                </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
-              <p>AngularJS</p>
-            </div>
-            <div class="col-lg-7 wow fadeInLeft">
-                <div class="progress progress-bar-default">
-                    <div style="width: 80%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="progress-bar">
-                        <!-- <span class="sr-only">80% Complete (success)</span> -->
-                    </div>
-                </div>
-            </div>
-          </div>
-          <br>
-          <div class="row">
-            <div class="col-lg-1 col-lg-offset-2 wow fadeInLeft">
-              <p>Ionic</p>
-            </div>
-            <div class="col-lg-7 wow fadeInLeft">
-                <div class="progress progress-bar-default">
-                    <div style="width: 60%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="progress-bar">
-                        <!-- <span class="sr-only">60% Complete (success)</span> -->
-                    </div>
-                </div>
-            </div>
-          </div>
+            </br>
+          {% endfor %}
+
         </div>
     </div>
 </section>

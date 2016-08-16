@@ -1,0 +1,44 @@
+# content for landing page
+
+about:
+  title: 'Te-Chi Liu'
+  role: 'Web Developer, Learner'
+  intro: 'I love web and open source technologies. I grow with them from 1990.'
+
+career-title: 'Experience'
+career:
+  promise:
+    icon_cls_attr: 'fa fa-laptop'
+    name: 'Promise Technology'
+    description: 'Developing management portal of virtual desktop; a Single Page Application with RESTful API using Django and AngularJS.'
+    from: 'Dec. 2015 ~ now'
+    job_title: 'R&D'
+
+  udacity_nd:
+    icon_cls_attr: 'fa fa-university'
+    name: 'Udacity FullStack Nanodegree'
+    description: 'I am a student learning FullStack web tech, such as relational db, RESTful api, Google App Engine.'
+    from: 'Sep. 2015 ~ Apr. 2016'
+    job_title: 'Student'
+
+  udemy_translator:
+    icon_cls_attr: 'fa fa-language'
+    name: 'MOOC Localization'
+    description: 'Translate MOOC on Udemy into Chinese. Courses are related to web technologies like AngularJS, HTML and CSS.'
+    from: 'Aug. 2015 ~ July. 2016'
+    job_title: 'Translator'
+
+skills-title: 'My Skills'
+skills:
+  python:
+    name: 'Python'
+    prof: 'Intermediate'
+    level: 70
+  angularjs:
+    name: 'AngularJS'
+    prof: 'Intermediate'
+    level: 70
+  coffeescript:
+    name: 'CoffeeScript'
+    prof: 'Basic'
+    level: 50

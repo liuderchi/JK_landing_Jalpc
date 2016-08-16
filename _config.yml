@@ -26,9 +26,9 @@ author:
 landing:
   home: 'Home'
   about: 'About'
-  career: 'Career'
+  career: 'Experience'
   skills: 'Skills'
-  projects: 'Project'
+  projects: 'Project & Contribution'
   # blog: 'Blog'
   link: 'Link'
 
