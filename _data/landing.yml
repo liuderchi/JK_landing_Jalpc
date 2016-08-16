@@ -42,3 +42,12 @@ skills:
     name: 'CoffeeScript'
     prof: 'Basic'
     level: 50
+
+projects-title: 'Project & Contribution'
+projects:
+  mean_todo:
+    name: 'ToDo List using MEAN'
+    img: 'static/img/landing/mean.png'
+    url: 'https://github.com/liuderchi/todo-list-mean'
+    description: 'A simple todo list app using MEAN stack with RESTful style API. It is deployed on Heroku.'
+    cls_attr: 'fadeInLeft'   # NOTE or fadeInRight

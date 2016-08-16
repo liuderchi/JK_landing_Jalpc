@@ -28,7 +28,7 @@ landing:
   about: 'About'
   career: 'Experience'
   skills: 'Skills'
-  projects: 'Project & Contribution'
+  projects: 'Projects'
   # blog: 'Blog'
   link: 'Link'
 
@@ -97,4 +97,13 @@ kramdown:
   syntax_highlighter: rouge
 
 # temporarily exclude blog files
-exclude: ['blog/blog.html', 'blog/database.html', 'blog/html.html', 'blog/life.html', 'blog/linux.html', 'blog/mac.html', 'blog/python.html', '_posts']
+exclude: ['_posts/',
+          'search/',
+          'blog/blog.html',
+          'blog/database.html',
+          'blog/html.html',
+          'blog/life.html',
+          'blog/linux.html',
+          'blog/mac.html',
+          'blog/python.html'
+          ]
