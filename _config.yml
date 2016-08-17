@@ -1,70 +1,70 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: "Te-Chi Liu"
-description: "Derek's blog powered by Jekyll and GitHub Pages."
-keywords: "liuderchi,portfolio,github,gh-pages,angular,atom"
+title: Te-Chi Liu
+description: Dereks blog powered by Jekyll and GitHub Pages.
+keywords: liuderchi,portfolio,github,gh-pages,angular,atom
 
-baseurl: "/jalpc_jekyll_theme/"
-# url: "http://127.0.0.1:4000"
+baseurl: /jalpc_jekyll_theme/
+# url: http://127.0.0.1:4000
 
 # blog img path
-# img_path: 'http://www.jack003.com/static/img/blog'
+# img_path: http://www.jack003.com/static/img/blog
 
 # author
 author:
-  name: 'Derek'
-  first_name: 'Te-Chi'
-  last_name: 'Liu'
-  email: 'liuderchi@gmail.com'
-  github_username: 'liuderchi'
-  head_img: 'static/img/landing/Derek.jpg'
-  description: 'Learning from Open Source.'
-  link: ''
+  name: Derek
+  first_name: Te-Chi
+  last_name: Liu
+  email: liuderchi@gmail.com
+  github_username: liuderchi
+  head_img: static/img/landing/Derek.jpg
+  description: Learning from Open Source.
+  link:
 
 # landing page
 landing:
-  home: 'Home'
-  about: 'About'
-  career: 'Experience'
-  skills: 'Skills'
-  projects: 'Projects'
-  # blog: 'Blog'
-  link: 'Link'
+  home: Home
+  about: About
+  career: Experience
+  skills: Skills
+  projects: Projects
+  # blog: Blog
+  link: Link
 
 # my projects
 project:
   saplatform:
-    name: 'Saplatform'
-    url: '/Jack614/saplatform'
-    img: 'static/img/landing/saplatform.png'
+    name: Saplatform
+    url: /Jack614/saplatform
+    img: static/img/landing/saplatform.png
   jalpc:
-    name: 'Jalpc'
-    url: '/Jack614/jalpc_jekyll_theme'
-    img: 'static/img/landing/jekyll.png'
+    name: Jalpc
+    url: /Jack614/jalpc_jekyll_theme
+    img: static/img/landing/jekyll.png
   angularjs:
-    name: 'Jalpc-A'
-    url: '/Jack614/Jalpc-A'
-    img: 'static/img/landing/angularjs.png'
+    name: Jalpc-A
+    url: /Jack614/Jalpc-A
+    img: static/img/landing/angularjs.png
   Rsser:
-    name: 'Rsser'
-    url: '/Jack614/Rsser'
-    img: 'static/img/landing/rsser.png'
+    name: Rsser
+    url: /Jack614/Rsser
+    img: static/img/landing/rsser.png
 
 # blog index
 index:
-  home: 'Home'
-  python: 'Python'
-  linux: 'Linux'
-  html: 'HTML'
-  database: 'Database'
-  mac: 'Mac'
-  life: 'Life'
+  home: Home
+  python: Python
+  linux: Linux
+  html: HTML
+  database: Database
+  mac: Mac
+  life: Life
 
 # donate
 # donate:
-#   wechat: 'static/img/pay/wechat.png'
-#   alipay: 'static/img/pay/alipay.png'
+#   wechat: static/img/pay/wechat.png
+#   alipay: static/img/pay/alipay.png
 
 # comment
 # changyan:
@@ -87,7 +87,7 @@ index:
   # id: UA-73784599-1
 
 # Build settings
-encoding: "utf-8"
+encoding: utf-8
 
 # other settings
 highlighter: rouge
@@ -97,13 +97,13 @@ kramdown:
   syntax_highlighter: rouge
 
 # temporarily exclude blog files
-exclude: ['_posts/',
-          'search/',
-          'blog/blog.html',
-          'blog/database.html',
-          'blog/html.html',
-          'blog/life.html',
-          'blog/linux.html',
-          'blog/mac.html',
-          'blog/python.html'
-          ]
+exclude:
+- _posts/
+- search/
+- blog/blog.html
+- blog/database.html
+- blog/html.html
+- blog/life.html
+- blog/linux.html
+- blog/mac.html
+- blog/python.html
