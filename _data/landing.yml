@@ -1,0 +1,66 @@
+# content for landing page
+
+about:
+  title: Te-Chi Liu
+  role: Web Developer
+  intro: "I love web tech.</br>
+    I learn from open source.</br>
+    I share what I've learned with others."
+
+career-title: Experience
+career:
+- icon_cls_attr: fa fa-laptop
+  name: Promise Technology
+  description: Developing management portal of virtual desktop; a Single Page Application with RESTful API using Django and AngularJS.
+  from: Dec. 2015 ~ now
+  job_title: Web Developer
+
+- icon_cls_attr: fa fa-university
+  name: Udacity FullStack Web Developer Nanodegree
+  description: I am a student learning FullStack web tech, such as relational db, RESTful api, Google App Engine.
+  from: Sep. 2015 ~ Apr. 2016
+  job_title: Student
+
+- icon_cls_attr: fa fa-language
+  name: Udemy Online Course Translation
+  description: Translate MOOC on Udemy into Chinese. Courses are related to web technologies like AngularJS, HTML and CSS.
+  from: Aug. 2015 ~ July. 2016
+  job_title: Translator
+
+skills-title: My Skills
+skills:
+- name: Python
+  prof: develop API endpoint with Django, Mongoengine
+  level: 80
+- name: AngularJS
+  prof: build SPA with RESTful API server
+  level: 80
+- name: JavaScript
+  prof: contribute to Atom editor using ES6
+  level: 90
+
+projects-title: Project & Contribution
+projects:
+- name: atom-i18n
+  img: static/img/landing/atom.png
+  url: https://atom.io/packages/atom-i18n
+  description: "Atom Package for translating Atom into any language.</br>
+    Currently it supports 12 languages.</br>
+    Translation is driven by community."
+  cls_attr: fadeInLeft
+
+- name: atom/tree-view
+  img: static/img/landing/atom.png
+  url: https://github.com/atom/tree-view/pull/881
+  description: "Extend functionality of Atom core module: tree view.</br>
+    This contribution includes <code>Jasmine</code> spec.</br>
+    Merged by Atom official in version 1.12."
+  cls_attr: fadeInRight
+
+- name: ToDo List using MEAN
+  img: static/img/landing/mean.png
+  url: https://demo-todo-mean.herokuapp.com/
+  description: "A simple todo list app using MEAN stack with RESTful style API.</br>
+    It is integrated with Travis CI testing API using <code>Mocha</code>.</br>
+    It is deployed on Heroku."
+  cls_attr: fadeInLeft

@@ -1,101 +1,93 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: "Jalpc"
-description: "Jack's blog,use Jekyll and github pages."
-keywords: "Jack,Jalpc,blog,Jekyll,github,gh-pages"
+title: Te-Chi Liu
+description: Dereks blog powered by Jekyll and GitHub Pages.
+keywords: liuderchi,portfolio,github,gh-pages,angular,atom
 
-baseurl: "/jalpc_jekyll_theme/"
-# url: "http://www.jack003.com"
-# url: "http://127.0.0.1:4000"
+baseurl: /
+# url: http://127.0.0.1:4000
 
 # blog img path
-img_path: 'http://www.jack003.com/static/img/blog'
+# img_path: http://www.jack003.com/static/img/blog
 
 # author
 author:
-  name: 'Jack'
-  first_name: 'Jia'
-  last_name: 'Kun'
-  email: 'me@jack003.com'
-  facebook_username: 'jiakunnj'
-  github_username: 'Jack614'
-  head_img: 'static/img/landing/Jack.jpg'
+  name: Derek
+  first_name: Te-Chi
+  last_name: Liu
+  email: liuderchi@gmail.com
+  github_username: liuderchi
+  head_img: static/img/landing/Derek.jpg
+  description: Learning from Open Source.
+  link:
 
-# social link
-jingyu:
-  first_name: 'Yu'
-  last_name: 'Jing'
-  description: 'Painter.'
-  link: 'http://angular.jack003.com'
-  email: '805963294@qq.com'
-
-# landing page
+# landing page section titles
 landing:
-  home: 'Home'
-  about: 'About'
-  career: 'Career'
-  skills: 'Skills'
-  projects: 'Project'
-  blog: 'Blog'
-  link: 'Link'
+  home: Home
+  about: About
+  career: Experience
+  skills: Skills
+  projects: Projects
+  # blog: Blog
+  link: Link
 
 # my projects
-project:
-  saplatform:
-    name: 'Saplatform'
-    url: '/Jack614/saplatform'
-    img: 'static/img/landing/saplatform.png'
-  jalpc:
-    name: 'Jalpc'
-    url: '/Jack614/jalpc_jekyll_theme'
-    img: 'static/img/landing/jekyll.png'
-  angularjs:
-    name: 'Jalpc-A'
-    url: '/Jack614/Jalpc-A'
-    img: 'static/img/landing/angularjs.png'
-  Rsser:
-    name: 'Rsser'
-    url: '/Jack614/Rsser'
-    img: 'static/img/landing/rsser.png'
+# project:
+#   saplatform:
+#     name: Saplatform
+#     url: /Jack614/saplatform
+#     img: static/img/landing/saplatform.png
+#   jalpc:
+#     name: Jalpc
+#     url: /Jack614/jalpc_jekyll_theme
+#     img: static/img/landing/jekyll.png
+#   angularjs:
+#     name: Jalpc-A
+#     url: /Jack614/Jalpc-A
+#     img: static/img/landing/angularjs.png
+#   Rsser:
+#     name: Rsser
+#     url: /Jack614/Rsser
+#     img: static/img/landing/rsser.png
 
 # blog index
-index:
-  home: 'Home'
-  python: 'Python'
-  linux: 'Linux'
-  html: 'HTML'
-  database: 'Database'
-  mac: 'Mac'
-  life: 'Life'
+# index:
+#   home: Home
+#   python: Python
+#   linux: Linux
+#   html: HTML
+#   database: Database
+#   mac: Mac
+#   life: Life
 
 # donate
-donate:
-  wechat: 'static/img/pay/wechat.png'
-  alipay: 'static/img/pay/alipay.png'
+# donate:
+#   wechat: static/img/pay/wechat.png
+#   alipay: static/img/pay/alipay.png
 
 # comment
-changyan:
-  # appid: cysfY7ULn
-  # conf: prod_861928934cecb7a18e15bedaed9dae29
-disqus:
-  name: jalpc
-  public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
+# changyan:
+#   # appid: cysfY7ULn
+#   # conf: prod_861928934cecb7a18e15bedaed9dae29
+# disqus:
+#   name: jalpc
+#   public_key: tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7
 
 # share
-bshare:
-  uuid: 513f778e-a8f7-4c20-9ec2-d29cc2328d75
+# bshare:
+#   uuid: 513f778e-a8f7-4c20-9ec2-d29cc2328d75
 
 # baidu analytics
-ba:
-  uuid: 317acca9ef9255b934e46371e471431d
+# ba:
+  # uuid: 317acca9ef9255b934e46371e471431d
 
 # google analytics
-ga:
-  id: UA-73784599-1
+# ga:
+  # id: UA-73784599-1
 
 # Build settings
-encoding: "utf-8"
+encoding: utf-8
 
 # other settings
 highlighter: rouge
@@ -105,4 +97,13 @@ kramdown:
   syntax_highlighter: rouge
 
 # temporarily exclude blog files
-exclude: ['blog/blog.html', 'blog/database.html', 'blog/html.html', 'blog/life.html', 'blog/linux.html', 'blog/mac.html', 'blog/python.html', '_posts']
+exclude:
+- _posts/
+- search/
+- blog/blog.html
+- blog/database.html
+- blog/html.html
+- blog/life.html
+- blog/linux.html
+- blog/mac.html
+- blog/python.html
